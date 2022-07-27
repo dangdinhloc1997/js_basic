@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.container1 {
+    position: relative;
+}
+input 
+{
+    padding: 1.25em;
+    height: 3.125em;
+    width: 30%;
+    border: 0.16em solid rgb(139, 133, 133) ;
+    border-radius: 0.3125em;
+}
+input:focus 
+{
+    border: 0.16em solid rgb(66,133,244);
+}
+label 
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 1.3125em;
+    transform: translateY(-50%);
+    color: rgb(139, 133, 133);
+    transition: all 0.25s ease-in;
+    user-select: none;
+}
+input:focus ~ label 
+{
+    display: inline-block;
+    background-color: white;
+    top: -0.16em;
+    padding: 0 1em;
+    font-weight: bold;
+    color: rgb(66,133,244);
+}
+input:not(:placeholder-shown) 
+{
+    border: 0.16em solid rgb(66,133,244)
+}
+input:not(:placeholder-shown) ~ label 
+{
+    display: inline-block;
+    background-color: white;
+    top: -0.16em;
+    padding: 0 1em;
+    font-weight: bold;
+    color: rgb(66,133,244);
+}
+.btn-go {
+    cursor: pointer;
+    height: 3.125em;
+    background-color: green;
+    color: whitesmoke;
+    padding: 0 1em;
+    border-radius: 7px;
+}

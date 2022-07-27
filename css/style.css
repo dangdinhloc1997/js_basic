@@ -1,0 +1,42 @@
+:root 
+{
+    --j-color: #04aa6d;
+    --j-color2: #db0011;
+}
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    border: none;
+}
+.container 
+{
+    width: 75em;
+    margin: 0 auto;
+    color: var(--j-color);
+}
+header h1 
+{
+    color: var(--j-color2);
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main ul li
+{
+    height: 30px;
+}
+p {
+    padding: 50px 0;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
